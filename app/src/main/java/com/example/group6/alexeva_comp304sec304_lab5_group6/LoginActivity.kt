@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -24,7 +21,13 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        Toast.makeText(this,"Welcome to Login Screen", Toast.LENGTH_SHORT).show()
 
+        // Get the widgets reference from XML layout
+        val imageCollegeLogo = findViewById<ImageView>(R.id.image_college_logo)
+
+        // Display an image on image view from resource
+        imageCollegeLogo.setImageResource(R.drawable.college_logo)
         auth = Firebase.auth
         Log.d(TAG, "IS THERE A USER? "+auth.currentUser)
 

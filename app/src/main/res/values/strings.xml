@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Lab5-Group6</string>
+    <string name="app_name">Employee Database</string>
+    <string name="textview_log_in">LOG IN</string>
+    <string name="edittext_enter_email">Enter Email</string>
+    <string name="editText_enter_password">Enter Password</string>
+    <string name="btn_log_in">Log In</string>
+    <string name="textView_not_an_employee_sign_up_here">Not an Employee? Sign Up Here!</string>
+    <string name="textView_enter_name">Enter name</string>
+    <string name="textView_enter_department">Enter Department</string>
+    <string name="textView_enter_time">Enter Time</string>
+    <string name="textView_enter_salary">Enter Salary</string>
+    <string name="btn_insert">INSERT</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="textView_enter_updated_name">Enter Updated name</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_sign_out">Sign Out</string>
 </resources>
