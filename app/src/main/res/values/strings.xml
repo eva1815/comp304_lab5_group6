@@ -10,8 +10,8 @@
     <string name="textView_enter_time">Enter Time</string>
     <string name="textView_enter_salary">Enter Salary</string>
     <string name="btn_insert">INSERT</string>
-    <string name="btn_delete">DELETE</string>
+    <string name="btn_delete">DELETE BY NAME</string>
     <string name="textView_enter_updated_name">Enter Updated name</string>
-    <string name="btn_update">UPDATE</string>
+    <string name="btn_update">UPDATE BY NAME</string>
     <string name="btn_sign_out">Sign Out</string>
 </resources>
