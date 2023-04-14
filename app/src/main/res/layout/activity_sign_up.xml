@@ -12,15 +12,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
-        android:textSize="20sp"/>
+        android:text="@string/textView_sign_up"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
 
     <EditText
         android:layout_marginTop="10dp"
         android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Email"
+        android:hint="@string/editText_enter_email"
         android:inputType="textEmailAddress"/>
 
     <EditText
@@ -28,7 +29,7 @@
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Password"
+        android:hint="@string/editText_enter_password_sign_up"
         android:inputType="textPassword"/>
 
     <EditText
@@ -36,23 +37,28 @@
         android:id="@+id/et_password_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Confirm Password"
+        android:hint="@string/editText_confirm_password"
         android:inputType="textPassword"/>
 
     <Button
         android:layout_marginTop="10dp"
         android:id="@+id/btn_signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign Up"/>
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/update_btn"
+        android:text="@string/btn_sign_up"/>
 
     <TextView
         android:layout_marginTop="10dp"
         android:id="@+id/tv_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="18dp"
         android:gravity="center"
-        android:text="Already a Member? Login Here!"/>
+        android:textColor="@color/home_button_green"
+        android:text="@string/textView_already_an_employee_login_here"/>
 
 
 

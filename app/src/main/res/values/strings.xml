@@ -14,4 +14,20 @@
     <string name="textView_enter_updated_name">Enter Updated name</string>
     <string name="btn_update">UPDATE BY NAME</string>
     <string name="btn_sign_out">Sign Out</string>
+    <string name="textView_employee_info">EMPLOYEE INFO</string>
+    <string name="msg_welcome_home_screen">Welcome to Home Screen</string>
+    <string name="msg_insert_successfully">Insert Successfully!</string>
+    <string name="msg_delete_successfully">Delete Successfully!</string>
+    <string name="msg_update_successfully">Update Successfully!</string>
+    <string name="msg_fill_updated_info">Please fill in all Updated fields!</string>
+    <string name="msg_welcome_login_screen">Welcome to Login Screen</string>
+    <string name="textView_sign_up">SIGN UP</string>
+    <string name="editText_enter_email">Enter Email</string>
+    <string name="editText_enter_password_sign_up">Enter Password</string>
+    <string name="editText_confirm_password">Confirm Password</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="textView_already_an_employee_login_here">Already an Employee? Login Here!</string>
+    <string name="msg_welcome_sign_up_screen">Welcome To Sign Up Screen</string>
+    <string name="msg_sign_up_successfully">Sign Up Successful!</string>
+    <string name="msg_auth_failed">Authentication failed.</string>
 </resources>

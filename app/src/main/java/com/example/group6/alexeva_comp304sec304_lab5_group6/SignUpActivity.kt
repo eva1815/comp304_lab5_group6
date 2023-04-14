@@ -26,6 +26,7 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+        Toast.makeText(this,getString(R.string.msg_welcome_sign_up_screen), Toast.LENGTH_SHORT).show()
 
         auth = Firebase.auth
         etEmail = findViewById(R.id.et_email)
@@ -68,7 +69,7 @@ class SignUpActivity : AppCompatActivity() {
                         Log.d(TAG, "createUserWithEmail:success")
                         Toast.makeText(
                             this@SignUpActivity,
-                            "Sign Up Successful!",
+                            getString(R.string.msg_sign_up_successfully),
                             Toast.LENGTH_SHORT
                         ).show()
                         val intent = Intent(this@SignUpActivity, LoginActivity::class.java)
@@ -76,7 +77,7 @@ class SignUpActivity : AppCompatActivity() {
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "createUserWithEmail:failure")
-                        Toast.makeText(baseContext, "Authentication failed."+task.exception,
+                        Toast.makeText(baseContext, getString(R.string.msg_auth_failed)+task.exception,
                             Toast.LENGTH_SHORT).show()
 
                     }

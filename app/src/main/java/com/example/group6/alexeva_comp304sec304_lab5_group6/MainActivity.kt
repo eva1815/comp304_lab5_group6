@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Toast.makeText(this,"Welcome to Home Screen", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,getString(R.string.msg_welcome_home_screen), Toast.LENGTH_SHORT).show()
         //Employee (name, department, time, salary)
 
       textView = findViewById(R.id.tv_list)
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
           val inputDepartment = textDepartment.text.toString().trim()
           val inputTime = textTime.text.toString().trim()
           val inputSalary = textSalary.text.toString().trim()
-          Toast.makeText(this, "Insert Successfully!", Toast.LENGTH_SHORT).show()
+          Toast.makeText(this, getString(R.string.msg_insert_successfully), Toast.LENGTH_SHORT).show()
           employeeViewModel.insert(Employee(null,input,inputDepartment,inputTime,inputSalary.toInt()))
       }
       buttonDelete.setOnClickListener {
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
           val inputDepartment = textDepartment.text.toString().trim()
           val inputTime = textTime.text.toString().trim()
           val inputSalary = textSalary.text.toString().trim()
-          Toast.makeText(this, "Delete Successfully!", Toast.LENGTH_SHORT).show()
+          Toast.makeText(this, getString(R.string.msg_delete_successfully), Toast.LENGTH_SHORT).show()
           employeeViewModel.delete(input,inputDepartment,inputTime,inputSalary)
       }
       buttonUpdate.setOnClickListener {
@@ -84,10 +84,10 @@ class MainActivity : AppCompatActivity() {
 
           if (input.isNotEmpty() && newInputName.isNotEmpty() && newInputDepartment.isNotEmpty() && newInputTime.isNotEmpty() && newInputSalary.isNotEmpty()) {
               println("$input $newInputName $newInputDepartment $newInputTime $newInputSalary")
-              Toast.makeText(this, "Update Successfully!", Toast.LENGTH_SHORT).show()
+              Toast.makeText(this, getString(R.string.msg_update_successfully), Toast.LENGTH_SHORT).show()
               employeeViewModel.update(input, newInputName, newInputDepartment, newInputTime, newInputSalary)
           } else {
-              Toast.makeText(this, "Please fill in all Updated fields!", Toast.LENGTH_SHORT).show()
+              Toast.makeText(this, getString(R.string.msg_fill_updated_info), Toast.LENGTH_SHORT).show()
           }
       }
         btnSignOut.setOnClickListener {

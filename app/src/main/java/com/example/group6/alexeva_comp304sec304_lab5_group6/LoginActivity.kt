@@ -16,12 +16,13 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var etPassword: EditText
     private lateinit var btnLogin: Button
     private lateinit var tvSignUp: TextView
+
     private val TAG = "Firebase_Auth_Login"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        Toast.makeText(this,"Welcome to Login Screen", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,getString(R.string.msg_welcome_login_screen), Toast.LENGTH_SHORT).show()
 
         // Get the widgets reference from XML layout
         val imageCollegeLogo = findViewById<ImageView>(R.id.image_college_logo)
